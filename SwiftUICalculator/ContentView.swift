@@ -9,8 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
+
     let buttons = [
         ["7", "8", "9", "X"],
         ["4", "5", "6", "-"],
@@ -22,8 +21,6 @@ struct ContentView: View {
         
         ZStack (alignment: .bottom) {
             Color.black.edgesIgnoringSafeArea(.all)
-            
-           
             
             VStack(spacing: 12) {
                 HStack {
@@ -47,6 +44,7 @@ struct ContentView: View {
             }.padding(.bottom)
         }
     }
+    
     func buttonWidth() -> CGFloat {
         return (UIScreen.main.bounds.width - 5 * 12) / 4
     }
